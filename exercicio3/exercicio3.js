@@ -1,6 +1,10 @@
-const verificacaoDeCor = document.getElementsByClassName('quadro');
-console.log(verificacaoDeCor)
+const quadro = document.querySelector('.quadro');
 
-const possuiCorAzul = verificacaoDeCor.classList.contains("azul");
-
-console.log(possuiCorAzul)
+quadro.addEventListener('click', () => {
+    const verificacaoDeCor = quadro.classList.contains('azul');
+    if(verificacaoDeCor) {
+        quadro.classList.remove('azul');
+    } else {
+        quadro.classList.add('azul');
+    }
+});
