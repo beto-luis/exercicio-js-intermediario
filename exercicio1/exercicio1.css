@@ -5,15 +5,16 @@ body{
     flex-direction: column;
 }
 
-.azul{
+.quadro{
     width: 200px;
     height: 200px;
+}
+
+.azul{
     background-color: blue;
 }
 
 .vermelho{
-    width: 200px;
-    height: 200px;
     background-color: red;
 }
 
