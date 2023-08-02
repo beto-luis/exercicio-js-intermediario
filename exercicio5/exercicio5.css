@@ -1,16 +1,64 @@
-main {
-    content: '';
-    min-height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
 }
 
-.carrossel {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
+.image-slider {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: yellow;
+}
+
+.imagem {
+    position: relative;
+    top: 50%;
+    left: -300px;
+    background-color: aqua;
+    width: 380px;
+    height: 460px;
+    border-radius: 10px;
+}
+
+.lista-imagens .imagem .descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+    padding: 50px;
+}
+
+.titulo {
+    font-weight: 400;
+}
+
+.texto {
+    font-weight: 300;
+}
+
+.link {
+    font-weight: 700;
+}
+
+.link.cartao1 {
+    color: #c50000;
+}
+
+.btn-seta {
+    background-color: transparent;
+    margin: 15px;
+    padding: 0;
+    border-style: none;
+    cursor: pointer;
+}
+
+.btn-seta img {
+    color: #fff;
+}
+
+.btn-voltar {
+    transform: rotateY(180deg);
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,51 @@
     <link rel="stylesheet" href="exercicio5.css">
     <link rel="stylesheet" href="reset5.css">
 </head>
-<body>
-    <main>
-        <div class="carrosesel">
-            <img class="imagem ativa" src="../images/cerejeira.png" alt="Imagem de uma cerejeira">
-            <img class="imagem" src="../images/flores.png" alt="Imgem de flores">
-            <img class="imagem" src="../images/montanhas.png" alt="Imagem de montanhas">
-            <img class="imagem" src="../images/lago.png" alt="Imagem de um lago">
-        </div>
-        <div>
-            <h1>Título imagem 1</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia odio dolor error totam explicabo exercitationem illum sint mollitia quas quasi eligendi, veritatis molestiae assumenda labore itaque iure eius quisquam aut.</p>
-            <a id="link-cartao" href="#">Saiba mais</a>
-        </div>
-        <div>
 
-        </div>
+<body>
+    <main class="image-slider">
+        <button class="btn-seta btn-voltar" id="btn-voltar">
+            <img src="../images/seta.png" alt="botão de rolagem para esquerda">
+        </button>
+        <ul class="lista-imagens">
+            <li class="imagem ativa fundo-1">
+                <div class="descricao">
+                    <h1 class="titulo">Título imagem 1</h1>
+                    <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis egestas ex, a elementum est. Mauris auctor nunc quis erat aliquet, at eleifend augue pulvinar. Phasellus nulla eros, consequat a ipsum in, ultrices volutpat felis. Duis in nibh a tellus sodales finibus. Fusce libero turpis, sodales eu facilisis et, tristique vitae nibh. Praesent arcu eros, condimentum a interdum in, semper in ante. Suspendisse dolor urna, volutpat a e
+                    </p>
+                    <a class="link cartao1" href="#">Saiba mais</a>
+                </div>
+            </li>
+
+            <!-- <li class="imagem fundo-2">
+                <div class="descricao">
+                    <h1 class="">Título imagem 2</h1>
+                    <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus veniam sint quia repellendus quos? Excepturi voluptate eum consequuntur, distinctio iste voluptates harum tenetur eos voluptatibus adipisci? Beatae nihil voluptates tenetur.</p>
+                    <a class="link-cartao2" href="#">Saiba mais</a>
+                </div>
+            </li>
+
+            <li class="imagem fundo-3">
+                <div class="descricao">
+                    <h1 class="">Título imagem 3</h1>
+                    <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus veniam sint quia repellendus quos? Excepturi voluptate eum consequuntur, distinctio iste voluptates harum tenetur eos voluptatibus adipisci? Beatae nihil voluptates tenetur.</p>
+                    <a class="link-cartao3" href="#">Saiba mais</a>
+                </div>
+            </li>
+
+            <li class="imagem fundo-4"> 
+                <div class="descricao">
+                    <h1 class="">Título imagem 4</h1>
+                    <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus veniam sint quia repellendus quos? Excepturi voluptate eum consequuntur, distinctio iste voluptates harum tenetur eos voluptatibus adipisci? Beatae nihil voluptates tenetur.</p>
+                    <a class="link-cartao4" href="#">Saiba mais</a>
+                </div>
+            </li> -->
+        </ul>
+        <button class="btn-seta"  id="btn-avancar">
+            <img src="../images/seta.png" alt="botão de rolagem para direita">
+        </button>
     </main>
     <script type="text/javascript" src="exercicio5.js"></script>
 </body>
+
 </html>
