@@ -1,6 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+.imagem-slider {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
 
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #000;
+.imagem-slider .imagem {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s ease-out;
+    display: flex;
+    align-items: center;
+}
+
+.imagem-slider .imagem.mostrar {
+    opacity: 1;
+}
+
+.imagem-vermelha {
+    background-image: url(../images/cerejeira.png);
+}
+
+.imagem-verde {
+    background-image: url(../images/flores.png);
+}
+
+.imagem-laranja {
+    background-image: url(../images/montanhas.png);
+}
+
+.imagem-azul {
+    background-image: url(../images/lago.png);
+}
+
+.seta-voltar, .seta-avancar {
+    position: absolute;
+    z-index: 1;
+}
+
+.seta-voltar {
+    left: 15px;
+    transform: rotateY(180deg);
+}
+
+.seta-avancar {
+    right: 15px;
+}
+
+.opacidade {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.descricao {
+    width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: 180px;
+    padding: 65px 60px;
+}
+
+.descricao .titulo {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 400;
+} 
+
+.descricao .texto {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.descricao .link {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.descricao .link.vermelho{
+    color: #c50000;
+}
+
+.descricao .link.verde {
+    color: #d9dd10;
+}
+
+.descricao .link.laranja {
+    color: #a63a17;
+}
+
+.descricao .link.azul {
+    color: #10acdd;
 }
