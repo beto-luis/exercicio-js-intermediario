@@ -14,8 +14,20 @@ setaAvancar.addEventListener("click", function () {
 
     imagens[imagemAtual].classList.add("mostrar");
 
-    mostrarOuEsconderSetas()
+    mostrarOuEsconderSetas();
+});
 
+setaVoltar.addEventListener("click", function () {
+    if (imagemAtual === imagens.length + 1) {
+        return;
+    }
+    esconderImagemAberta();
+
+    imagemAtual--;
+
+    imagens[imagemAtual].classList.add("mostrar");
+
+    mostrarOuEsconderSetas();
 });
 
 function esconderImagemAberta() {
