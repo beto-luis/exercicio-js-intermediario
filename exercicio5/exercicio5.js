@@ -18,7 +18,7 @@ setaAvancar.addEventListener("click", function () {
 });
 
 setaVoltar.addEventListener("click", function () {
-    if (imagemAtual === imagens.length + 1) {
+    if (imagemAtual === 0) {
         return;
     }
     esconderImagemAberta();
